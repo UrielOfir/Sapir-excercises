@@ -16,7 +16,6 @@
 <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "https://widgets.moovit.com/ws/85B262CF4DFE6167E0530100007FC6B7/2538446"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'moovit-jsw'));</script>
 
 <link rel="stylesheet" type="text/css" href="css.css">
-<script src="js.js"></script>
 
 <title>Uriel's site
 </title>
@@ -68,62 +67,49 @@
         <hr class="d-sm-none">
       </div>
       <div class="col-sm-8">
-        <h2>Passover Seder Together</h2>
-        <h4>Do you want to be alone at Passover Seder?</h4>
-        <div class="fakeimg"><img src="images/seder1cur.jpg" height="200px"></div>
-        <p>The Passover Seder is one the important nights for every family. But you don't have family to be with this year.<br>You found the right place. Join us and we'll do the Seder together</p>
-        <p><h5>Where is it going to be?</h5>
-        In my appartment.<br>
-        Address: Hapalmach 72, Beersheba.</p>
-        <p><h5>What is going to be?</h5></p>
-          <ul>
-              <li>20:00 Welcome and introduction.</li>
-              <li>20:30 Reading the Hagada.</li>
-              <li>21:00 Starting to eat.</li>
-          </ul>
-          <a class="btn btn-success" href="reservationForm.html" role="button">Register now</a>
-          <br>
-          <br>
-          <h5>Shuttle arrivals options</h5>
-          <table>
-            <tr>
-              <th>Name</th>
-              <th>City</th>
-              <th>Phone</th>
-              <th>Departs at</th>
-            </tr>
-            <tr>
-              <th>Dina</th>
-              <th>Ashdod</th>
-              <th>053-7777777</th>
-              <th>19:00</th>
-            </tr>
-            <tr>
-              <th>Moshe</th>
-              <th>Jerusalem</th>
-              <th>050-5555555</th>
-              <th>18:00</th>
-            </tr>
-            <tr>
-              <th>Yosi</th>
-              <th>Tel-Aviv</th>
-              <th>052-3333333</th>
-              <th>18:30</th>
-            </tr>
-          </table>
-          <br>
-          <div class="mv-gd-widget-20" data-width="300" data-height="499" ></div>
-          <br>
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.3217045666247!2d34.786086714475225!3d31.23951646808329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x150266108ca4d3b9%3A0x45e1d2759d4ae496!2sHa-Palmakh+St+72%2C+Be&#39;er+Sheva!5e0!3m2!1sen!2sil!4v1554361983510!5m2!1sen!2sil" width="600" height="450" frameborder="0"0 allowfullscreen></iframe>
+        <h2>Reservation Form</h2>
+        <form>
+          <div class="form-group">
+            <label for="FullName">Password</label>
+            <input type="FullName" class="form-control" id="FullName" placeholder="Your full name">
+          </div>
+          <div class="form-group">
+            <label for="Phone">Phone number</label>
+            <input type="Phone" class="form-control" id="phone" placeholder="Your phone number">
+          </div>
+        <div class="form-group">
+          <label for="InputEmail">Email address</label>
+          <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
+        <div class="form-group">
+          <label for="NumberOfGuests">Number of guests</label>
+          <input type="NumberOfGuests" class="form-control" id="NumberOfGuests" placeholder="How many guests come with you?">
+        </div>
+        <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optradio" value="Arriving independently">Arriving independently.
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optradio" value="By shuttle">By shuttle.
+          </label>
+      </div>
+      <div class="form-group">
+        <label for="comment">Comments:</label>
+        <textarea class="form-control" rows="5" id="comments"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+      </div>
     </div>
   </div>
 
   <footer>
   <div class="jumbotron text-center">
    <p><a target="_blank" title="follow me on facebook" href="https://www.facebook.com/Urielofir86"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0></a> &nbsp <a href="mailto:urielofir@gmail.com?Subject=Tell%20me%20about%20your%20Passover%20Seder" target="_top">Contact us <img src=images/emailButton.png height="45px"></a></p>
-   <a href="https://github.com/UrielOfir/"><p>@All rights resereved to Uriel Ofir</p><a/>
   </div>
   </footer>
 
