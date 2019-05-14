@@ -83,3 +83,6 @@ a.control_next {
   width: 500px;
   height: 300px;
 }
+.glow:hover{
+  animation: glow 1s ease-in-out infinite alternate;
+}
