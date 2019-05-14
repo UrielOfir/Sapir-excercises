@@ -84,6 +84,8 @@ a.control_next {
   height: 300px;
 }
 .glow:hover{
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
   font-size: 200px;
 }
