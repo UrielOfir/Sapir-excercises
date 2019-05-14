@@ -16,6 +16,7 @@
 <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "https://widgets.moovit.com/ws/85B262CF4DFE6167E0530100007FC6B7/2538446"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'moovit-jsw'));</script>
 
 <link rel="stylesheet" type="text/css" href="css.css">
+<script src="js.js"></script>
 
 <title>Uriel's site
 </title>
@@ -68,9 +69,9 @@
       </div>
       <div class="col-sm-8">
         <h2>Reservation Form</h2>
-        <form action="/action_page.php" method="post">
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
           <div class="form-group">
-            <label for="FullName">Password</label>
+            <label for="FullName" name="FullName">Full name</label>
             <input type="FullName" class="form-control" id="FullName" placeholder="Your full name">
           </div>
           <div class="form-group">

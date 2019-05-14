@@ -20,7 +20,7 @@ jQuery(document).ready(function ($) {
     function moveLeft() {
         $('#slider ul').animate({
             left: + slideWidth
-        }, 200, function () {
+        }, 400, function () {
             $('#slider ul li:last-child').prependTo('#slider ul');
             $('#slider ul').css('left', '');
         });
@@ -29,7 +29,7 @@ jQuery(document).ready(function ($) {
     function moveRight() {
         $('#slider ul').animate({
             left: - slideWidth
-        }, 200, function () {
+        }, 400, function () {
             $('#slider ul li:first-child').appendTo('#slider ul');
             $('#slider ul').css('left', '');
         });
@@ -44,3 +44,17 @@ jQuery(document).ready(function ($) {
     });
 
 });
+
+function validateForm() {
+  var x = document.forms["myForm"]["FullName"].value;
+  var letters = /^[A-Za-z]+$/;
+  if(x.match(letters))
+    {
+     return true;
+    }
+  else
+    {
+    alert("Name must be filled out with letters only");
+    return false;
+    }
+}
