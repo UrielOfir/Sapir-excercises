@@ -78,3 +78,8 @@ a.control_next {
   border-radius: 2px 0 0 2px;
 }
 .description:hover{ font-size: 150%;}
+
+.photos{
+  width: 500px;
+  height: 300px;
+}
