@@ -85,4 +85,5 @@ a.control_next {
 }
 .glow:hover{
   animation: glow 1s ease-in-out infinite alternate;
+  font-size: 200px;
 }
