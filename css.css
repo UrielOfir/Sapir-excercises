@@ -16,5 +16,8 @@ tr:nth-child(even) {
 }
 
 .navbar {margin-bottom: 30px}
+.description:hover{font-size: 150%}
+
+th:hover{background-color: yellow}
 
 footer {margin-top: 30px}
