@@ -1,21 +1,6 @@
-function validateForm() {
-  var x = document.forms["myForm"]["FullName"].value;
-  var letters = /^[A-Za-z]+$/;
-  if(x.match(letters))
-    {
-     return true;
-    }
-  else
-    {
-    alert("Name must be filled out with letters only");
-    return false;
-    }
-}
-
-
 var i = 0,images = ["images/index1.jpeg",
-                               "images/index2.jpeg",
-                               "images/index3.jpeg"];
+                    "images/index2.jpeg",
+                    "images/index3.jpeg"];
 
          function mySlide(param)
          {
@@ -30,3 +15,9 @@ var i = 0,images = ["images/index1.jpeg",
 
              document.getElementById('slide').src = images[i];
          }
+
+         var name = document.forms["myForm"]["FullName"];
+             var email = document.forms["myForm"]["EMail"];
+             var phone = document.forms["myForm"]["Phone"];
+             var gestsNum =  document.forms["myForm"]["NumberOfGuests"];
+             var arrivingBy = document.forms["myForm"]["arrivingBy"];  

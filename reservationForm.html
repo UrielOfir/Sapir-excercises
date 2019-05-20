@@ -72,29 +72,29 @@
         <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
           <div class="form-group">
             <label for="FullName" name="FullName">Full name</label>
-            <input type="FullName" class="form-control" id="FullName" placeholder="Your full name">
+            <input type="FullName" pattern="[A-Za-z]{}" class="form-control" id="FullName" placeholder="Your full name">
           </div>
           <div class="form-group">
-            <label for="Phone">Phone number</label>
+            <label for="Phone" name="Phone" maxlength="10">Phone number</label>
             <input type="Phone" class="form-control" id="phone" placeholder="Your phone number">
           </div>
         <div class="form-group">
-          <label for="InputEmail">Email address</label>
-          <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <label for="InputEmail" name="EMail">Email address</label>
+          <input type="email"  class="form-control" id="InputEmail1" placeholder="Enter email">
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
-          <label for="NumberOfGuests">Number of guests</label>
+          <label for="NumberOfGuests" name="NumberOfGuests">Number of guests</label>
           <input type="NumberOfGuests" class="form-control" id="NumberOfGuests" placeholder="How many guests come with you?">
         </div>
         <div class="form-check">
         <label class="form-check-label">
-          <input type="radio" class="form-check-input" name="optradio" value="Arriving independently">Arriving independently.
+          <input type="radio" class="form-check-input" name="arrivingBy" value="Arriving independently">Arriving independently.
         </label>
       </div>
       <div class="form-check">
         <label class="form-check-label">
-          <input type="radio" class="form-check-input" name="optradio" value="By shuttle">By shuttle.
+          <input type="radio" class="form-check-input" name="arrivingBy" value="By shuttle">By shuttle.
           </label>
       </div>
       <div class="form-group">
