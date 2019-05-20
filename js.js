@@ -22,7 +22,7 @@ var i = 0,images = ["images/index1.jpeg",
              var gestsNum =  document.forms["myForm"]["NumberOfGuests"];
              var arrivingBy = document.forms["myForm"]["arrivingBy"];
 
-             if (!FullName.value.match(/^[A-Za-z]+$/))                                  
+             if (!FullName.value.match(/^[A-Za-z]+$/))
        {
            window.alert("Please enter your name.");
            name.focus();
