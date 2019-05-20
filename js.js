@@ -18,10 +18,10 @@ var i = 0,images = ["images/index1.jpeg",
          var myText = document.getElementById("comments");
          var wordCount = document.getElementById("wordCount");
 
-      /*   myText.addEventListener("keyup",function(){
+         myText.addEventListener("keyup",function(){
  	         var characters = myText.value.split('');
            wordCount.innerText = 200-characters.length;
-         });*/
+         });
 
          function validateForm(){
          var name = document.forms["myForm"]["FullName"];
