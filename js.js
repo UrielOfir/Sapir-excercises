@@ -15,16 +15,11 @@ var i = 0,images = ["images/index1.jpeg",
 
              document.getElementById('slide').src = images[i];
          }
-<<<<<<< HEAD
          function validateForm(){
-=======
-
->>>>>>> 5a782a541c4b087bb38e46c747fc0a851ccd3db4
          var name = document.forms["myForm"]["FullName"];
              var email = document.forms["myForm"]["EMail"];
              var phone = document.forms["myForm"]["Phone"];
              var gestsNum =  document.forms["myForm"]["NumberOfGuests"];
-<<<<<<< HEAD
              var arrivingBy = document.forms["myForm"]["arrivingBy"];
 
              if (!FullName.value.match(/^[A-Za-z]+$/))
@@ -35,6 +30,3 @@ var i = 0,images = ["images/index1.jpeg",
        }
 
           }
-=======
-             var arrivingBy = document.forms["myForm"]["arrivingBy"];  
->>>>>>> 5a782a541c4b087bb38e46c747fc0a851ccd3db4
