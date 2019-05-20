@@ -70,22 +70,25 @@
       <div class="col-sm-8">
         <h2>Reservation Form</h2>
         <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+
           <div class="form-group">
             <label for="FullName" name="FullName">Full name</label>
-            <input type="FullName" class="form-control" id="FullName" placeholder="Your full name">
+            <input type="FullName" class="form-control" id="FullName" placeholder="Your full name" required>
           </div>
+
           <div class="form-group">
-            <label for="Phone">Phone number</label>
-            <input type="Phone" class="form-control" id="phone" placeholder="Your phone number">
+            <label for="Phone" name="Phone">Phone number</label>
+            <input type="Phone" class="form-control" id="Phone" placeholder="Your phone number" required>
           </div>
+
         <div class="form-group">
-          <label for="InputEmail">Email address</label>
-          <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <label for="InputEmail1" name="InputEmail1">Email address</label>
+          <input type="InputEmail1" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
           <label for="NumberOfGuests">Number of guests</label>
-          <input type="NumberOfGuests" class="form-control" id="NumberOfGuests" placeholder="How many guests come with you?">
+          <input type="NumberOfGuests" class="form-control" id="NumberOfGuests" placeholder="How many guests come with you?" required>
         </div>
         <div class="form-check">
         <label class="form-check-label">
@@ -97,10 +100,18 @@
           <input type="radio" class="form-check-input" name="optradio" value="By shuttle">By shuttle.
           </label>
       </div>
+
       <div class="form-group">
-        <label for="comment">Comments:</label>
-        <textarea class="form-control" rows="5" id="comments"></textarea>
-      </div>
+      <label for="comment">add a comment</label>
+      <div>
+      <textarea class="bla" rows="3" onkeyup="countDown(this);"></textarea>
+    </div>
+    <div id="charactersRemaining">180</div>
+
+  </form>
+</div>
+
+
 
       <button type="submit" class="btn btn-success">Submit</button>
       </form>
