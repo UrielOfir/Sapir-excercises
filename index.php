@@ -48,6 +48,7 @@
         <h2>About Me</h2>
         <h5>Photo of me:</h5>
         <div class="fakeimg"><img src="images/myPicture.jpg" height="200px"> </div>
+        <?php include 'test.php';?>
         <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
         <h3>Some Links</h3>
         <p>Lorem ipsum dolor sit ame.</p>
